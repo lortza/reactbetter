@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get 'pages/about'
 
-  get 'pages/lemonade'
+  get 'pages/react'
 
   root "pages#home"
 

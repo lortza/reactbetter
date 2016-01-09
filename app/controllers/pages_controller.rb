@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  def lemonade
-  end
+  def react
+    @reaction = Reaction.all.sample
+  end #react
 end
