@@ -6,6 +6,6 @@ class PagesController < ApplicationController
   end
 
   def react
-    @reaction = Reaction.all.sample
+    @reaction = Reaction.published.sample
   end #react
 end

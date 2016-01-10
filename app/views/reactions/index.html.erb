@@ -14,7 +14,8 @@
   <tbody>
     <% @reactions.each do |reaction| %>
       <tr>
-        <td><%= link_to reaction.name, reaction %></td>
+        <td><%= link_to reaction.name, reaction %><br> 
+        <%= display_unpublished_indicator(reaction) %></td>
         <td><%= reaction.explanation %></td>
         <td><%= link_to 'Show', reaction %></td>
         <td><%= link_to 'Edit', edit_reaction_path(reaction) %></td>
