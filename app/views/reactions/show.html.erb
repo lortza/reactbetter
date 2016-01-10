@@ -10,5 +10,10 @@
   <%= @reaction.explanation %>
 </p>
 
+<p>
+  <strong>Status:</strong>
+  <%= @reaction.publish_status %>
+</p>
+
 <%= link_to 'Edit', edit_reaction_path(@reaction) %> |
 <%= link_to 'Back', reactions_path %>

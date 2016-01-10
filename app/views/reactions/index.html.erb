@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Reactions</h1>
+<h1>Reactions Index</h1>
 
 <table>
   <thead>
@@ -14,11 +14,11 @@
   <tbody>
     <% @reactions.each do |reaction| %>
       <tr>
-        <td><%= reaction.name %></td>
+        <td><%= link_to reaction.name, reaction %></td>
         <td><%= reaction.explanation %></td>
         <td><%= link_to 'Show', reaction %></td>
         <td><%= link_to 'Edit', edit_reaction_path(reaction) %></td>
-        <td><%= link_to 'Destroy', reaction, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', reaction, method: :delete, data: { confirm: "Whoa there! Are you sure you want to delete this reaction? Once it is gone, it's gone and this can't be undone. If you'd like to Unpublish it instead, click Cancel, then set the Publish Status to Unpublished." } %></td>
       </tr>
     <% end %>
   </tbody>

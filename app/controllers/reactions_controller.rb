@@ -1,5 +1,7 @@
 class ReactionsController < ApplicationController
   before_action :set_reaction, only: [:show, :edit, :update, :destroy]
+  #give users permission to manage Reactions list
+  before_action :require_signin
 
   # GET /reactions
   # GET /reactions.json
@@ -69,6 +71,6 @@ class ReactionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reaction_params
-      params.require(:reaction).permit(:name, :explanation)
+      params.require(:reaction).permit(:name, :explanation, :publish_status)
     end
 end
