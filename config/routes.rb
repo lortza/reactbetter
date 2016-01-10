@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   resources :users
   resources :reactions
-  resources :session
+  resource :session
   get "signin" => "sessions#new"
 
   get 'pages/home'

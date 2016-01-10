@@ -1,12 +1,14 @@
 <nav>
   <%= link_to "Home", root_path %> | 
   <%= link_to "React Better!", pages_react_path %> 
-  <% if current_user_admin? %>
+  <% if current_user %>
      | <%= link_to "Reactions Index", reactions_path %> | 
-    <%= link_to "Users Index", users_path %> | 
-    <%= link_to "Create New User", new_user_path %> | 
+     <% if current_user_admin? %>
+      <%= link_to "Users Index", users_path %> | 
+      <%= link_to "Create New User", new_user_path %> | 
+    <% end %><!-- current_user_admin? -->
     <%= link_to "#{current_user.name}'s Profile", current_user %> | 
     <%= link_to "Account Settings", edit_user_path(current_user) %> | 
     <%= link_to "Sign Out", session_path, method: :delete, class: "button" %>
-  <% end %>
+  <% end %><!-- if current_user -->
 </nav>

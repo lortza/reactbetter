@@ -2,6 +2,9 @@ class UsersController < ApplicationController
 
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :require_signin
+  before_action :require_correct_user, except: [:index]
+
+  before_action :require_admin, only: [:index]
 
   def index
     @users = User.all 
@@ -16,8 +19,9 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
+    @user.save
     if @user.save
-      session[user_id] = @user.id
+      session[:user_id] = @user.id
       redirect_to @user
     else
       render :new
@@ -29,7 +33,7 @@ class UsersController < ApplicationController
 
   def update
     if @user.update(user_params)
-      reditect_to @user, notice: "#{@user.name}'s account has been successfully updated."
+      redirect_to @user, notice: "#{@user.name}'s account has been successfully updated."
     else
       render :edit
     end #if
@@ -49,5 +53,12 @@ private
   def user_params
     params.require(:user).permit(:name, :email, :username, :password, :password_confirmation, :admin) 
   end #user_params
+
+  def require_correct_user
+    #@user = User.find(params[:id]) 
+    unless current_user?(@user)
+      redirect_to root_url
+    end #unless
+  end #require_correct_user
     
 end #UsersController
