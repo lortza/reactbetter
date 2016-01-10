@@ -10,5 +10,20 @@ class User < ActiveRecord::Base
                      uniqueness: { case_sensitive: false }
 
   validates :password, length: { minimum: 8, allow_blank: true }
+  
+  before_save :format_username
+  before_save :format_email
 
+  def self.authenticate(email_or_username, password)
+    user = User.find_by(email: email_or_username) || User.find_by(username: email_or_username)
+    user && user.authenticate(password)
+  end #self.authenticate(email, password)
+  
+  def format_username
+    self.username = username.downcase
+  end #format_username
+
+  def format_email
+    self.email = email.downcase 
+  end #format_email
 end #User

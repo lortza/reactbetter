@@ -7,9 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav><%= link_to "Home", root_path %> | <%= link_to "Reactions Index", reactions_path %> | <%= link_to "Users Index", users_path %> | <%= link_to "React Better!", pages_react_path %></nav>
+  <%= render "layouts/header" %>
 
-<%= yield %>
+  <%= yield %>
 
+  <%= render "layouts/footer" %>
 </body>
 </html>

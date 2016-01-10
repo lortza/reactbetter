@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
+
+
   resources :users
   resources :reactions
+  resources :session
+  get "signin" => "sessions#new"
+
   get 'pages/home'
-
   get 'pages/about'
-
   get 'pages/react'
 
   root "pages#home"
