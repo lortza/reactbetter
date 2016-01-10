@@ -1,2 +1,2 @@
 module PagesHelper
-end
+end #PagesHelper
