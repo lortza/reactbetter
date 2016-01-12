@@ -6,16 +6,16 @@
 
   <h1><%= @user.name %>'s Profile</h1>
 
-  <p>Name: <%= @user.name %></p>
+  <p><strong>Name:</strong> <%= @user.name %></p>
 
-  <p>Username: <%= @user.username %></p>
+  <p><strong>Username:</strong> <%= @user.username %></p>
 
-  <p>Email: <%= @user.email %></p>
+  <p><strong>Email:</strong> <%= @user.email %></p>
 
-  <p>Admin: <%= @user.admin %></p>
+  <p><strong>Admin:</strong> <%= @user.admin %></p>
 
 
-  <%= link_to 'Edit', edit_user_path(@user) %> |
-  <%= link_to 'Cancel', root_path %>
+  <%= link_to 'Edit Profile', edit_user_path(@user), class: "btn btn-primary btn-sm" %> 
+  <%= link_to 'Cancel', root_path, class: "btn btn-primary btn-sm" %> 
 </div> <!-- container wrapper -->
 

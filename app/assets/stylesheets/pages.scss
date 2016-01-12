@@ -18,7 +18,7 @@ body {
   background: rgba(225, 225, 225, 0.7);
   border-radius: 30px;
   padding: 10px 30px;
-  box-shadow: 5px 5px 10px 0px #333;
+  // box-shadow: 5px 5px 10px 0px #333;
   margin: 0 auto;
   width: 66%;
   max-width: 450px;
@@ -39,10 +39,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
   } /* p */
-
-    
-    
+ 
 } /* .content */
+
+.copyright {
+  color: #979797;
+  padding-top: 15px;
+} /* .copyright */
+
 
 
   
