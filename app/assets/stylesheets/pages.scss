@@ -7,7 +7,7 @@ body {
 }
 
 .full {
-  background: image-url("citrus-991090_1920.jpg") no-repeat center center fixed; 
+  background: image-url("background-906143_1920") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,7 +15,8 @@ body {
 }/* full */
 
 .content {
-  background: rgba(225, 225, 225, 0.7);
+  background: rgba(246,246,246,0.7);
+  transform: translateZ(0);
   border-radius: 30px;
   padding: 1% 5%;
   // box-shadow: 5px 5px 10px 0px #333;
