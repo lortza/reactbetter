@@ -14,5 +14,23 @@
   color: black; 
 } /* .wrapper */
 
+.navbar-brand {
+  margin-top: -10px;
+   img {
+    height: 25px;
+    vertical-align: 1px; 
+   } /* img */
+} /* .navbar-brand */
+
+
+.logo-font-one {
+  font-family: 'Bad Script', cursive;
+  color: $yellow; 
+} /* .logo-font-one */
+.logo-font-two {
+  font-family: 'Bad Script', cursive;
+  color: $light-green; 
+} /* .logo-font-one */
+  
 
   
