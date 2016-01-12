@@ -36,7 +36,7 @@
                 </li><!-- User Profile Dropdown -->
                 <li><%= link_to "Sign Out", session_path, method: :delete, class: "button" %></li>
               <% end %><!-- if current_user -->
-                <li><%= link_to "About", pages_about_path %></li>
+                <li><%= link_to "About", about_path %></li>
                 <% unless current_user %>
                 <ul class="nav navbar-nav navbar-right"> 
                   <li class="dropdown">

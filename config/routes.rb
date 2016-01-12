@@ -8,7 +8,9 @@ Rails.application.routes.draw do
 
   get 'pages/home'
   get 'pages/about'
+  get "about" => "pages#about"
   get 'pages/react'
+  get "react" => "pages#react"
 
   root "pages#home"
 
