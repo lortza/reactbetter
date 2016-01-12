@@ -1,0 +1,140 @@
+/* line 3, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.github-fork-ribbon {
+  background-color: #f80;
+}
+
+/* .github-fork-ribbon */
+/* line 8, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.wrapper {
+  background: rgba(225, 225, 225, 0.9);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  color: black;
+}
+
+/* .wrapper */
+/* line 3, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+/* line 9, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.full {
+  background: url(/assets/citrus-991090_1920-49fd3291c74b4a98dc8a7e34340985573767fe0ffcaab7b30935b514abb085b9.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* full */
+/* line 17, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content {
+  background: rgba(225, 225, 225, 0.7);
+  border-radius: 30px;
+  padding: 1% 5%;
+  margin: 0 auto;
+  width: 66%;
+  max-width: 450px;
+  text-align: center;
+  color: black;
+  /* h1 h2 p */
+  /* h1 */
+  /* h2 */
+  /* p */
+  /* .reaction */
+}
+/* line 28, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content h1 h2 p {
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 32, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content h1 {
+  font-weight: 300;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+/* line 37, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content h2 {
+  font-size: 15px;
+}
+/* line 41, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+/* line 45, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content .reaction {
+  font-family: 'Bad Script', cursive;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+/* .content */
+/* line 53, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.copyright {
+  color: #979797;
+  padding-top: 15px;
+}
+
+/* .copyright */
+/* MEDIA QUERIES */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  /* line 61, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content {
+    padding: 2% 5% 0.5% 5%;
+    margin: 0 auto;
+    width: 90%;
+    /* h1 */
+    /* h2 */
+    /* p */
+    /* .reaction */
+  }
+  /* line 65, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  /* line 69, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content h2 {
+    font-size: 10px;
+  }
+  /* line 72, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content p {
+    font-size: 15px;
+  }
+  /* line 75, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content .reaction {
+    font-family: 'Bad Script', cursive;
+    font-size: 50px;
+  }
+
+  /* .content */
+}
+/* media */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ *= layouts
+ *= pages
+ *= reactions
+ *= scaffolds
+ *= sessions
+ *= users
+ *= media_queries
+ *=  */
+

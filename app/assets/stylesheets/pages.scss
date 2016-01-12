@@ -17,7 +17,7 @@ body {
 .content {
   background: rgba(225, 225, 225, 0.7);
   border-radius: 30px;
-  padding: 10px 30px;
+  padding: 1% 5%;
   // box-shadow: 5px 5px 10px 0px #333;
   margin: 0 auto;
   width: 66%;
@@ -25,20 +25,28 @@ body {
   text-align: center;
   color: black;
   // text-shadow: 2px 2px 8px #333;
+  h1 h2 p {
+    font-family: 'Open Sans', sans-serif;
+  } /* h1 h2 p */
+    
   h1 {
-    font-family: 'Bad Script', cursive;
-    font-size: 70px; 
+    font-weight: 300;
+    font-size: 50px; 
     margin-bottom: 20px;
   } /* h1 */
   h2 {
-    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
   } /* h2 */
     
   p {
-    font-family: 'Open Sans', sans-serif;
     font-size: 20px;
+    margin-bottom: 30px;
   } /* p */
+  .reaction {
+    font-family: 'Bad Script', cursive;
+    font-size: 70px; 
+    margin-bottom: 20px;
+  } /* .reaction */
  
 } /* .content */
 
@@ -48,5 +56,27 @@ body {
 } /* .copyright */
 
 
+/* MEDIA QUERIES */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+    .content {
+      padding: 2% 5% 0.5% 5%;
+      margin: 0 auto;
+      width: 90%;
+      h1 {
+        font-size: 40px; 
+        margin-bottom: 20px;
+      } /* h1 */
+      h2 {
+        font-size: 10px;
+      } /* h2 */
+      p {
+        font-size: 15px;
+      } /* p */
+      .reaction {
+        font-family: 'Bad Script', cursive;
+        font-size: 50px; 
+      } /* .reaction */
+    } /* .content */   
+}/* media */
 
   
