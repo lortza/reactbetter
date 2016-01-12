@@ -1,11 +1,12 @@
 <% content_for(:title, "New Account") %>
 
 <div class="container wrapper">
-       
-  <h1>Create a New Account</h1>
-  <p>
-    Already have an account? <%= link_to "Sign In!", signin_path, class: "button" %>
-  </p>
+  <div class="pull-right">
+    <%= link_to ' Cancel', users_path, class: "btn btn-primary btn-sm fa fa-ban" %>
+   </div> <!-- pull-right -->
+
+  <h1>Create a New User Account</h1>
 
   <%= render "form" %>
+  
 </div> <!-- container wrapper -->

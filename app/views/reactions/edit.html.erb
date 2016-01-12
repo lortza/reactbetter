@@ -2,12 +2,13 @@
    
   <% content_for(:title, "Editing #{@reaction.name}") %>
 
+  <div class="pull-right">
+    <%= link_to ' Cancel', reactions_path, class: "btn btn-primary btn-sm fa fa-ban" %>
+  </div> <!-- pull-right -->
+
   <h1>Editing <%= @reaction.name %></h1>
 
   <%= render 'form' %>
-
-  <%= link_to 'Show', @reaction %> |
-  <%= link_to 'Back', reactions_path %>
 
 </div> <!-- wrapper container -->
 

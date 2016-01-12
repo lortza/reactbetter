@@ -4,6 +4,12 @@
        
   <p id="notice"><%= notice %></p>
 
+  <div class="pull-right">
+    <%= link_to ' Edit', edit_user_path(@user), class: "btn btn-primary btn-sm fa fa-pencil" %> 
+    <%= link_to ' Cancel', root_path, class: "btn btn-primary btn-sm fa fa-ban" %>  
+  </div> <!-- pull-right -->
+    
+
   <h1><%= @user.name %>'s Profile</h1>
 
   <p><strong>Name:</strong> <%= @user.name %></p>
@@ -12,10 +18,7 @@
 
   <p><strong>Email:</strong> <%= @user.email %></p>
 
-  <p><strong>Admin:</strong> <%= @user.admin %></p>
+  <p><strong>Admin Access:</strong> <%= @user.admin %></p>
 
-
-  <%= link_to 'Edit Profile', edit_user_path(@user), class: "btn btn-primary btn-sm" %> 
-  <%= link_to 'Cancel', root_path, class: "btn btn-primary btn-sm" %> 
 </div> <!-- container wrapper -->
 

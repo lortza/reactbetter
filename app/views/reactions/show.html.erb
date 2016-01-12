@@ -3,6 +3,13 @@
        
   <p id="notice"><%= notice %></p>
 
+  <div class="pull-right">
+    <%= link_to ' Edit', edit_reaction_path(@reaction), class: "btn btn-primary btn-sm fa fa-pencil" %> 
+    <%= link_to ' Back', reactions_path, class: "btn btn-primary btn-sm fa fa-ban" %>
+  </div> <!-- pull-right -->
+
+  <h1>Reaction: <%= @reaction.name %></h1>
+
   <p>
     <strong>Name:</strong>
     <%= @reaction.name %>
@@ -18,7 +25,5 @@
     <%= @reaction.publish_status %>
   </p>
 
-  <%= link_to 'Edit', edit_reaction_path(@reaction) %> |
-  <%= link_to 'Back', reactions_path %>
 </div> <!-- container wrapper -->
 
