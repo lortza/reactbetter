@@ -16,7 +16,6 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li><%= link_to "React Better!", pages_react_path %></li>
               <% if current_user %>
                  <li><%= link_to "Reactions Index", reactions_path %></li> 
                  <% if current_user_admin? %>
@@ -40,7 +39,8 @@
                 <li><%= link_to "About", pages_about_path %></li>
                 <% unless current_user %> 
                 <li><%= link_to "Sign In", new_session_path, class: "button" %></li>
-                <li><%= link_to "Request Access (doesn't work)", root_path %></li>
+                <li><%= mail_to "richardson.ae@gmail.com", "Request Access", 
+         subject: "ReactBetter: Please Give Me User Access", body: "Hey I've been using ReactBetter and I'd like to have access to edit the Reactions. Please drop me a line." %></li>
                 <% end %><!-- unless current_user -->
             </ul>
         </div><!-- /.navbar-collapse -->
