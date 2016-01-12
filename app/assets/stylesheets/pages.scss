@@ -1,1 +1,48 @@
 @import "colors";
+
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+.full {
+  background: url("citrus-991090_1920.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}/* full */
+
+.content {
+  background: rgba(225, 225, 225, 0.7);
+  border-radius: 30px;
+  padding: 10px 30px;
+  box-shadow: 5px 5px 10px 0px #333;
+  margin: 0 auto;
+  width: 66%;
+  max-width: 450px;
+  text-align: center;
+  color: black;
+  // text-shadow: 2px 2px 8px #333;
+  h1 {
+    font-family: 'Bad Script', cursive;
+    font-size: 70px; 
+    margin-bottom: 20px;
+  } /* h1 */
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+  } /* h2 */
+    
+  p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+  } /* p */
+
+    
+    
+} /* .content */
+
+
+  

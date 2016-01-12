@@ -1,32 +1,36 @@
 <% content_for(:title, "Reactions Index") %>
 
-<p id="notice"><%= notice %></p>
+<div class="container wrapper">
 
-<h1>Reactions Index</h1>
+  <div class="pull-right">
+    <%= link_to '+ New Reaction', new_reaction_path, class: "btn btn-primary btn-md" %> 
+  </div> <!-- pull-right -->
+  
+  <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Explanation</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <h1>Reactions Index</h1>
 
-  <tbody>
-    <% @reactions.each do |reaction| %>
+  <table class="table">
+    <thead>
       <tr>
-        <td><%= link_to reaction.name, reaction %><br> 
-        <%= display_unpublished_indicator(reaction) %></td>
-        <td><%= reaction.explanation %></td>
-        <td><%= link_to 'Show', reaction %></td>
-        <td><%= link_to 'Edit', edit_reaction_path(reaction) %></td>
-        <td><%= link_to 'Delete', reaction, method: :delete, data: { confirm: "Whoa there! Are you sure you want to delete this reaction? Once it is gone, it's gone and this can't be undone. If you'd like to Unpublish it instead, click Cancel, then set the Publish Status to Unpublished." } %></td>
+        <th>Name</th>
+        <th>Explanation</th>
+        <th colspan="2">Manage</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @reactions.each do |reaction| %>
+        <tr>
+          <td><%= link_to reaction.name, reaction %><br> 
+          <%= display_unpublished_indicator(reaction) %></td>
+          <td><%= reaction.explanation %></td>
+          <td><%= link_to ' ', edit_reaction_path(reaction), class: "fa fa-pencil" %></td>
+          <td><%= link_to ' ', reaction, method: :delete, data: { confirm: "Whoa there! Are you sure you want to delete this reaction? Once it is gone, it's gone and this can't be undone. If you'd like to Unpublish it instead, click Cancel, then set the Publish Status to Unpublished." }, class: "fa fa-trash-o" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Reaction', new_reaction_path %>
+</div> <!-- container wrapper -->
+

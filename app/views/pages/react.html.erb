@@ -1,7 +1,14 @@
 <% content_for(:title, @reaction.name) %>
 
-<p>Your Better Reaction:</p>
-<h1><%= @reaction.name %></h1>
-<p><%= @reaction.explanation %></p>
-<p><%= link_to "Give Me Another!", pages_react_path %></p>
+
+<div class="container">
+    <div class="row">
+      <div class="content">
+        <h2>Your Better Reaction:</h2>
+        <h1><%= @reaction.name %></h1>
+        <p><%= @reaction.explanation %></p>
+        <p><%= link_to "Give Me Another!", pages_react_path, class: "btn btn-success btn-lg" %></p>
+      </div><!-- content -->
+    </div><!-- /.row -->
+</div><!-- container -->
 

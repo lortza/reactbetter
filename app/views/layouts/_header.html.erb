@@ -1,14 +1,48 @@
-<nav>
-  <%= link_to "Home", root_path %> | 
-  <%= link_to "React Better!", pages_react_path %> 
-  <% if current_user %>
-     | <%= link_to "Reactions Index", reactions_path %> | 
-     <% if current_user_admin? %>
-      <%= link_to "Users Index", users_path %> | 
-      <%= link_to "Create New User", new_user_path %> | 
-    <% end %><!-- current_user_admin? -->
-    <%= link_to "#{current_user.name}'s Profile", current_user %> | 
-    <%= link_to "Account Settings", edit_user_path(current_user) %> | 
-    <%= link_to "Sign Out", session_path, method: :delete, class: "button" %>
-  <% end %><!-- if current_user -->
+
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">ReactBetter</a>
+
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><%= link_to "React Better!", pages_react_path %></li>
+              <% if current_user %>
+                 <li><%= link_to "Reactions Index", reactions_path %></li> 
+                 <% if current_user_admin? %>
+                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Users <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Users Index", users_path %></li>
+                    <li><%= link_to "Create New User", new_user_path %></li>
+                  </ul>
+                </li><!-- Admin-Only dropdown -->
+                <% end %><!-- current_user_admin? -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= current_user.name %> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><%= link_to "Profile", current_user %></li>
+                    <li><%= link_to "Account Settings", edit_user_path(current_user) %></li>
+                  </ul>
+                </li><!-- User Profile Dropdown -->
+                <li><%= link_to "Sign Out", session_path, method: :delete, class: "button" %></li>
+              <% end %><!-- if current_user -->
+                <li><%= link_to "About", pages_about_path %></li>
+                <% unless current_user %> 
+                <li><%= link_to "Sign In", new_session_path, class: "button" %></li>
+                <li><%= link_to "Request Access (doesn't work)", root_path %></li>
+                <% end %><!-- unless current_user -->
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
 </nav>

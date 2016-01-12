@@ -12,4 +12,11 @@
  *
  *= require_tree .
  *= require_self
- */
+ *= _colors
+ *= layouts
+ *= pages
+ *= reactions
+ *= scaffolds
+ *= sessions
+ *= users
+ *=  */

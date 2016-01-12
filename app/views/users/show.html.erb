@@ -1,15 +1,19 @@
 <% content_for(:title, @user.name) %>
 
-<p id="notice"><%= notice %></p>
+<div class="container wrapper">
+       
+  <p id="notice"><%= notice %></p>
 
-<p>Name: <%= @user.name %></p>
+  <p>Name: <%= @user.name %></p>
 
-<p>Username: <%= @user.username %></p>
+  <p>Username: <%= @user.username %></p>
 
-<p>Email: <%= @user.email %></p>
+  <p>Email: <%= @user.email %></p>
 
-<p>Admin: <%= @user.admin %></p>
+  <p>Admin: <%= @user.admin %></p>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', users_path %>
+</div> <!-- container wrapper -->
+
