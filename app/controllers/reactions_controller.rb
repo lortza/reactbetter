@@ -3,6 +3,7 @@ class ReactionsController < ApplicationController
   #give users permission to manage Reactions list
   before_action :require_signin
   before_action :set_reaction, only: [:show, :edit, :update, :destroy]
+  before_action :set_background_image
 
   # GET /reactions
   # GET /reactions.json
@@ -65,6 +66,11 @@ class ReactionsController < ApplicationController
   end
 
   private
+
+    def set_background_image
+      @background_image = "grass-1383426-1599x1066.jpg"
+    end #set_background_image
+      
     def set_reaction
       #@reaction = Reaction.find(params[:id])
       @reaction = Reaction.find_by!(slug: params[:id])

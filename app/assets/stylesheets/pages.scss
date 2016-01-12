@@ -7,7 +7,10 @@ body {
 }
 
 .full {
-  background: image-url("background-906143_1920") no-repeat center center fixed; 
+  // background: image-url("background-906143_1920") no-repeat center center fixed; 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

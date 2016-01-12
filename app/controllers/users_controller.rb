@@ -6,6 +6,8 @@ class UsersController < ApplicationController
 
   before_action :require_admin, only: [:index]
 
+  before_action :set_background_image
+
   def index
     @users = User.all 
   end #index
@@ -66,5 +68,9 @@ private
       redirect_to root_url
     end #unless
   end #require_correct_user
+
+  def set_background_image
+    @background_image = "grass-1383426-1599x1066.jpg"
+  end #set_background_image
     
 end #UsersController
