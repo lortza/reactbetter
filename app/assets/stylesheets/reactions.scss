@@ -1,1 +1,37 @@
 @import "colors";
+
+.unpublished {
+  margin-top: -5px;
+  font-size: 50%;
+  text-transform: uppercase;
+  color: gray;
+} /* .unpublished */
+
+article.listing {
+  margin: 10px 15px 5px 15px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px 20px 3px 20px;
+  p {
+    margin-top: 20px; 
+  } /* p */
+} /* article.listing */
+
+article.unpublished-article {
+  background-color: #D1D1D1;
+  p {
+     color: gray; 
+   } /* p */
+   a {
+     color: gray; 
+   } /* a */
+     
+      
+} /* .unpublished-article */
+
+
+
+
+
+
+
