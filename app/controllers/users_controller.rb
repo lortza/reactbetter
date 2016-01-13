@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
 
+  before_action :set_background_image
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :require_signin
   before_action :require_correct_user_or_admin, except: [:index]
 
   before_action :require_admin, only: [:index]
-
-  before_action :set_background_image
 
   def index
     @users = User.all 
