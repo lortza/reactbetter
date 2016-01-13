@@ -1,0 +1,262 @@
+/* line 3, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.github-fork-ribbon {
+  background-color: #f80;
+}
+
+/* .github-fork-ribbon */
+/* line 8, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.wrapper {
+  /* used on non Page views */
+  background: rgba(246, 246, 246, 0.8);
+  border-radius: 10px;
+  padding: 20px 30px;
+  margin: 0 auto;
+  color: black;
+}
+
+/* .wrapper */
+/* line 17, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.logo-font-one {
+  font-family: 'Bad Script', cursive;
+  color: #FFF500;
+}
+
+/* .logo-font-one */
+/* line 21, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.logo-font-two {
+  font-family: 'Bad Script', cursive;
+  color: #A8BF00;
+}
+
+/* .logo-font-one */
+/* BOOTSTRAP STYLES */
+/* line 28, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.navbar-brand {
+  margin-top: -10px;
+  /* img */
+}
+/* line 30, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+.navbar-brand img {
+  height: 25px;
+  vertical-align: 1px;
+}
+
+/* .navbar-brand */
+/* line 36, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+a {
+  /* &:hover */
+}
+/* line 37, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/layouts.scss */
+a:hover {
+  color: #A8BF00;
+  text-decoration: none;
+}
+
+/* a */
+/* BOOTSTRAP MEDIA QUERIES */
+/* Small devices (tablets, 768px and up) */
+/* 768px */
+/* Medium devices (desktops, 992px and up) */
+/* 992px */
+/* line 3, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+
+/* line 9, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.full {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* full */
+/* line 20, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content {
+  background: rgba(246, 246, 246, 0.8);
+  transform: translateZ(0);
+  border-radius: 30px;
+  padding: 1% 5%;
+  margin: 0 auto;
+  width: 66%;
+  max-width: 450px;
+  text-align: center;
+  color: black;
+  /* h1 h2 p */
+  /* h1 */
+  /* h2 */
+  /* p */
+  /* .reaction */
+}
+/* line 32, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content h1 h2 p {
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 36, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content h1 {
+  font-weight: 300;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+/* line 41, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content h2 {
+  font-size: 15px;
+}
+/* line 45, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+/* line 49, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.content .reaction {
+  font-family: 'Bad Script', cursive;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+/* .content */
+/* line 57, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+.copyright {
+  color: #979797;
+  padding-top: 15px;
+}
+
+/* .copyright */
+/* MEDIA QUERIES */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  /* line 65, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content {
+    padding: 2% 5% 0.5% 5%;
+    margin: 0 auto;
+    width: 90%;
+    /* h1 */
+    /* h2 */
+    /* p */
+    /* .reaction */
+  }
+  /* line 69, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  /* line 73, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content h2 {
+    font-size: 10px;
+  }
+  /* line 76, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content p {
+    font-size: 15px;
+  }
+  /* line 79, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/pages.scss */
+  .content .reaction {
+    font-family: 'Bad Script', cursive;
+    font-size: 50px;
+  }
+
+  /* .content */
+}
+/* media */
+/* line 3, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/reactions.scss */
+.unpublished {
+  margin-top: -5px;
+  font-size: 50%;
+  text-transform: uppercase;
+  color: gray;
+}
+
+/* .unpublished */
+/* line 10, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/reactions.scss */
+article.listing {
+  margin: 10px 15px 5px 15px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px 20px 3px 20px;
+  /* p */
+}
+/* line 15, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/reactions.scss */
+article.listing p {
+  margin-top: 20px;
+}
+
+/* article.listing */
+/* line 20, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/reactions.scss */
+article.unpublished-article {
+  background-color: #D1D1D1;
+  /* p */
+  /* a */
+}
+/* line 22, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/reactions.scss */
+article.unpublished-article p {
+  color: gray;
+}
+/* line 25, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/reactions.scss */
+article.unpublished-article a {
+  color: gray;
+}
+
+/* .unpublished-article */
+/* line 43, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 47, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 53, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 61, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 72, /Users/localflavor/Desktop/TTS/lemonade/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ *= layouts
+ *= pages
+ *= reactions
+ *= scaffolds
+ *= sessions
+ *= users
+ *=  */
+
