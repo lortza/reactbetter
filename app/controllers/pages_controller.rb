@@ -16,4 +16,4 @@ class PagesController < ApplicationController
     @reaction = Reaction.published.sample
     @background_image = REACT_IMAGES.sample
   end #react
-end
+end #PagesController

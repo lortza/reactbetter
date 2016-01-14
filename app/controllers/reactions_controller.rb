@@ -79,4 +79,5 @@ class ReactionsController < ApplicationController
     def reaction_params
       params.require(:reaction).permit(:name, :explanation, :publish_status, :slug)
     end #reaction_params
-end
+    
+end #ReactionsController
