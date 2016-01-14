@@ -19,16 +19,13 @@ body {
 
 .content {
   background: rgba(246,246,246,0.8);
-  // transform: translateZ(0);
   border-radius: 30px;
   padding: 1% 5%;
-  // box-shadow: 5px 5px 10px 0px #333;
   margin: 0 auto;
   width: 66%;
   max-width: 450px;
   text-align: center;
   color: black;
-  // text-shadow: 2px 2px 8px #333;
   h1 h2 p {
     font-family: 'Open Sans', sans-serif;
   } /* h1 h2 p */
@@ -104,7 +101,14 @@ body {
         font-family: 'Bad Script', cursive;
         font-size: 50px; 
       } /* .reaction */
-    } /* .content */   
+    } /* .content */ 
+
+    .connect {
+      padding: 2% 5% 0.5% 5%;
+      margin: 0 auto;
+      width: 90%;
+      } /* .connect */
+          
 }/* media */
 
   
