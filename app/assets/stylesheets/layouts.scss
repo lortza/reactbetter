@@ -21,6 +21,12 @@
   font-family: 'Bad Script', cursive;
   color: $light-green; 
 } /* .logo-font-one */
+
+ul.copyright {
+  color: #979797;
+  padding-top: 13px;
+  list-style: none; 
+} /* ul.copyright */
   
 
 /* BOOTSTRAP STYLES */
@@ -38,6 +44,8 @@ a {
      text-decoration: none; 
    } /* &:hover */
 } /* a */
+
+
 
 
 
