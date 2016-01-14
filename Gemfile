@@ -28,6 +28,10 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'awesome_print'
 
+gem 'rails_12factor', group: :production
+gem 'pry'
+gem 'pry-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
