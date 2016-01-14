@@ -1,6 +1,5 @@
 class ReactionsController < ApplicationController
   
-  #give users permission to manage Reactions list
   before_action :require_signin
   before_action :set_reaction, only: [:show, :edit, :update, :destroy]
   before_action :set_background_image

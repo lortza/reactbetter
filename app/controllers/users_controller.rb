@@ -1,12 +1,9 @@
 class UsersController < ApplicationController
-
   
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :require_signin
   before_action :require_correct_user_or_admin, except: [:index]
-
   before_action :require_admin, only: [:index]
-
   before_action :set_background_image
 
   def index
@@ -56,13 +53,6 @@ private
   def user_params
     params.require(:user).permit(:name, :email, :username, :password, :password_confirmation, :admin) 
   end #user_params
-
-  # def require_correct_user
-  #   #@user = User.find(params[:id]) 
-  #   unless current_user?(@user)
-  #     redirect_to root_url
-  #   end #unless
-  # end #require_correct_user
 
   def require_correct_user_or_admin
     unless current_user?(@user) || current_user_admin?
