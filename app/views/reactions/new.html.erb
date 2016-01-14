@@ -1,11 +1,12 @@
 <% content_for(:title, "Create a New Reaction") %>
 
 <div class="container wrapper">
+  <div class="pull-right"> 
+    <%= link_to ' Cancel', reactions_path, class: "btn btn-primary btn-sm fa fa-ban" %>
+  </div> <!-- pull-right -->
   
   <h1>New Reaction</h1>
 
   <%= render 'form' %>
-
-  <%= link_to 'Back', reactions_path %>
 
 </div> <!-- container wrapper -->
