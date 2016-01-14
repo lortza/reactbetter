@@ -68,7 +68,7 @@ body {
     font-size: 20px; 
   } /* i */
   img {
-    width: 40px;
+    width: 10%;
     float: left;
     margin: -10px 8px 0px 0px; 
   } /* img */
@@ -104,9 +104,19 @@ body {
     } /* .content */ 
 
     .connect {
-      padding: 2% 5% 0.5% 5%;
+      padding: 3% 5% 0.5% 5%;
       margin: 0 auto;
       width: 90%;
+      font-size: 70%;
+      overflow: auto;
+      i {
+        margin: 0px 1px;
+        font-size: 10px; 
+      } /* i */
+      img {
+        margin: -5px 5px 3px 0px; 
+      } /* img */
+        
       } /* .connect */
           
 }/* media */
