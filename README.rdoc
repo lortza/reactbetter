@@ -18,6 +18,3 @@ See the live version of the app at http://reactbetter.herokuapp.com
 * Images all exist as local assets
 * Run seeds to get a handful of populated Reactions as well as 1 temporary Admin user with the email of "admin@email.com" and the password of "password"
 
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
