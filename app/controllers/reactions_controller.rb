@@ -1,8 +1,8 @@
 class ReactionsController < ApplicationController
   
+  before_action :set_background_image
   before_action :require_signin
   before_action :set_reaction, only: [:show, :edit, :update, :destroy]
-  before_action :set_background_image
 
   # GET /reactions
   # GET /reactions.json
