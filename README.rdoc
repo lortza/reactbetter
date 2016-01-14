@@ -2,7 +2,7 @@
 
 Lemonade is the repo for the ReactBetter app. When requested by the user, this app displays a suggestion for a better emotional reaction with a randomly selected image in the background of that suggestion. 
 
-See the live version of the app at http://reactbetter.herokuapp.com/users(http://reactbetter.herokuapp.com/users)
+See the live version of the app at http://reactbetter.herokuapp.com/users
 
 * Ruby version: 2.2.1
 * Rails version: 4.2.3
