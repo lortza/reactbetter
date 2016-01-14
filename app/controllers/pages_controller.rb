@@ -15,5 +15,6 @@ class PagesController < ApplicationController
   def react
     @reaction = Reaction.published.sample
     @background_image = REACT_IMAGES.sample
+    binding.pry
   end #react
 end #PagesController
