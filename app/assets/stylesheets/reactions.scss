@@ -7,6 +7,12 @@
   color: gray;
 } /* .unpublished */
 
+.unpublished-warning {
+  color: red;
+  text-transform: uppercase;
+} /* .unpublished-warning */
+
+
 article.listing {
   margin: 10px 15px 5px 15px;
   background-color: white;

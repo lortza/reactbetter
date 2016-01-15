@@ -1,29 +1,22 @@
-<% content_for(:title, @reaction.name) %>
-<div class="container wrapper">
-       
-  <p id="notice"><%= notice %></p>
+<% content_for(:title, "Previewing: #{@reaction.name}") %>
 
-  <div class="pull-right">
-    <%= link_to ' Edit', edit_reaction_path(@reaction), class: "btn btn-primary btn-sm fa fa-pencil" %> 
-    <%= link_to ' Back', reactions_path, class: "btn btn-primary btn-sm fa fa-ban" %>
-  </div> <!-- pull-right -->
+<div class="container">
+  <div class="content">
+  
+    <div class="row">
+      <div class="pull-right">
+        <%= link_to ' Edit', edit_reaction_path(@reaction), class: "btn btn-primary btn-sm fa fa-pencil" %> 
+        <%= link_to ' Back to List', reactions_path, class: "btn btn-primary btn-sm fa fa-arrow-left" %>
+      </div> <!-- pull-right -->
+      <div class="pull-left">
+        <%= render "show_publish_status" %>
+      </div> <!-- pull-left -->
+    </div><!-- /.row -->
 
-  <h1>Reaction: <%= @reaction.name %></h1>
-
-  <p>
-    <strong>Name:</strong>
-    <%= @reaction.name %>
-  </p>
-
-  <p>
-    <strong>Explanation:</strong>
-    <%= @reaction.explanation %>
-  </p>
-
-  <p>
-    <strong>Status:</strong>
-    <%= @reaction.publish_status %>
-  </p>
-
-</div> <!-- container wrapper -->
+    <div class="row">
+      <h1 class="reaction"><%= @reaction.name %></h1>
+      <p><%= @reaction.explanation %></p>
+    </div><!-- /.row -->
+  </div><!-- content -->
+</div><!-- container -->
 
