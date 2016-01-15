@@ -2,18 +2,22 @@
 
 
 <div class="container">
-    <div class="row">
-      <div class="content">
-        <% if current_user %>
-          <div class="pull-right">
+  <div class="content">
+  
+    <% if current_user %>
+      <div class="row">
+        <div class="pull-right">
           <%= link_to ' Edit', edit_reaction_path(@reaction), class: "btn btn-primary btn-sm fa fa-pencil" %> 
-          </div> <!-- pull-right -->
-        <% end %><!-- current_user -->
-        <h2>Your Better Reaction:</h2>
-        <h1 class="reaction"><%= @reaction.name %></h1>
-        <p><%= @reaction.explanation %></p>
-        <p><%= link_to "Give Me Another!", react_path, class: "btn btn-warning btn-lg" %></p>
-      </div><!-- content -->
+        </div> <!-- pull-right -->
+      </div><!-- row -->
+    <% end %><!-- current_user -->
+
+    <div class="row">
+      <h2>Your Better Reaction:</h2>
+      <h1 class="reaction"><%= @reaction.name %></h1>
+      <p><%= @reaction.explanation %></p>
+      <p><%= link_to "Give Me Another!", react_path, class: "btn btn-warning btn-lg" %></p>
     </div><!-- /.row -->
+  </div><!-- content -->
 </div><!-- container -->
 

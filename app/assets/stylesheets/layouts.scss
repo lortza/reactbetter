@@ -6,7 +6,7 @@
 
 
 .wrapper { /* used on non Page views */
-  background: rgba(246,246,246,0.8);
+  background: $background-color-rgba;
   border-radius: 10px;
   padding: 20px 30px;
   margin: 0 auto;

@@ -1,8 +1,8 @@
 <% content_for(:title, "Previewing: #{@reaction.name}") %>
 
 <div class="container">
-  <div class="content">
   
+    <div class="show-nav"> 
     <div class="row">
       <div class="pull-right">
         <%= link_to ' Edit', edit_reaction_path(@reaction), class: "btn btn-primary btn-sm fa fa-pencil" %> 
@@ -12,8 +12,11 @@
         <%= render "show_publish_status" %>
       </div> <!-- pull-left -->
     </div><!-- /.row -->
+    </div> <!-- show-nav -->
 
+  <div class="content show-preview">
     <div class="row">
+      <h2>Your Better Reaction:</h2>
       <h1 class="reaction"><%= @reaction.name %></h1>
       <p><%= @reaction.explanation %></p>
     </div><!-- /.row -->
