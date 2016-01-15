@@ -1,11 +1,11 @@
-<% content_for(:title, "Editing #{@user.name}") %>
+<% content_for(:title, "Account Settings for #{@user.name}") %>
 
 <div class="container wrapper">
   <div class="pull-right">
     <%= link_to ' Cancel', users_path, class: "btn btn-primary btn-sm fa fa-ban" %>  
   </div> <!-- pull-right -->
      
-  <h1>Edit <%= @user.name %>'s Profile</h1>
+  <h1>Account Settings</h1>
 
   <%= render "form" %>
 
