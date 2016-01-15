@@ -62,7 +62,7 @@ private
   end #require_correct_user
 
   def set_background_image
-    @background_image = "grass-1383426-1599x1066.jpg"
+    @background_image = "sky-383823_1920.jpg"
   end #set_background_image
     
 end #UsersController
