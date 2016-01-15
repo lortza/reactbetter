@@ -2,7 +2,9 @@ class Reaction < ActiveRecord::Base
 
   before_validation :generate_slug
 
-  validates :name, :explanation, :slug, presence: true, uniqueness: true
+  validates :explanation, presence: true, length: { minimum: 25 }
+  validates :name, length: { maximum: 25 }
+  validates :name, :slug, presence: true, uniqueness: true
 
   PUBLISH_STATUS = %w(Published Unpublished)
   validates :publish_status, inclusion: { in: PUBLISH_STATUS }
