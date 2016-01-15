@@ -56,7 +56,9 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin Area<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <li><%= link_to "Sign In", new_session_path, class: "button" %></li>
-                      <li><%= mail_to "richardson.ae@gmail.com", "Request Access", 
+                      <li><a href="mailto:ichardson.ae@gmail.com?subject=ReactBetter:%20Please%20Give%20Me%20User%20Access&body=Hey%20I've%20been%20using%20ReactBetter%20and%20I'd%20like%20to%20have%20access%20to%20edit%20the%20Reactions.%20Please%20drop%20me%20a%20line.">NEW Request Access</a></li>
+
+                      <li><%= mail_to "richardson.ae@gmail.com", "OLD Request Access", 
            subject: "ReactBetter: Please Give Me User Access", body: "Hey I've been using ReactBetter and I'd like to have access to edit the Reactions. Please drop me a line." %></li>
                     </ul><!-- Admin Area dropdown items -->
                   </li><!-- Admin Area dropdown -->
