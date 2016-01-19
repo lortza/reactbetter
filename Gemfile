@@ -32,6 +32,8 @@ gem 'rails_12factor', group: :production
 gem 'pry'
 gem 'pry-rails'
 
+gem 'shareable'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
