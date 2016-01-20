@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   
   def home
     @background_image = HOME_IMAGES.sample
-    @randitem = Reaction.all.sample
+    @randitem = Reaction.published.sample
   end #home
 
   def about
