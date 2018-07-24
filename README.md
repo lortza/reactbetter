@@ -1,12 +1,12 @@
 ## README
 [![Build Status](https://travis-ci.org/lortza/lemonade.svg?branch=master)](https://travis-ci.org/lortza/lemonade)
 
-Lemonade is the repo for the ReactBetter app. When requested by the user, this app displays a suggestion for a better emotional reaction with a randomly selected image in the background of that suggestion. 
+Lemonade is the repo for the ReactBetter app. When requested by the user, this app displays a suggestion for a better emotional reaction with a randomly selected image in the background of that suggestion.
 
 See the live version of the app at http://reactbetter.herokuapp.com
 
-* Ruby version: 2.2.1
-* Rails version: 4.2.3
+* Ruby version: 2.2.4
+* Rails version: 4.2.10
 * Database: PSQL
 
 ### Features
@@ -17,5 +17,4 @@ See the live version of the app at http://reactbetter.herokuapp.com
 ### Installation Notes
 * Install as a PSQL app
 * Images all exist as local assets
-* Run seeds to get a handful of populated Reactions as well as 1 temporary Admin user with the email of "admin@email.com" and the password of "password"
-
+* Run seeds to get a handful of populated Reactions
