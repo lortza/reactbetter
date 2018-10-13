@@ -1,7 +1,7 @@
 ## README
-[![Build Status](https://travis-ci.org/lortza/lemonade.svg?branch=master)](https://travis-ci.org/lortza/lemonade)
+[![Build Status](https://travis-ci.org/lortza/reactbetter.svg?branch=master)](https://travis-ci.org/lortza/reactbetter)
 
-Lemonade is the repo for the ReactBetter app. When requested by the user, this app displays a suggestion for a better emotional reaction with a randomly selected image in the background of that suggestion.
+ReactBetter app displays a suggestion for a better emotional reaction with a randomly selected image in the background of that suggestion.
 
 See the live version of the app at http://reactbetter.herokuapp.com
 
