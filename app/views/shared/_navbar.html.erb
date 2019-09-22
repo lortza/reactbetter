@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-sm fixed-bottom navbar-dark bg-dark">
+  <a class="navbar-brand" href="/"><%= image_tag("logo.png") %><span class="logo-font-two">React</span><span class="logo-font-one">Better</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <% if current_user %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle fa fa-heart" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to 'Users', admin_users_path, class: 'dropdown-item' %>
+          <%= link_to "Sample Reaction", pages_react_path %>
+          <%= link_to "Reactions Index", reactions_path %>
+          <%= link_to "Create New Reaction", new_reaction_path %>
+        </div>
+      </li>
+
+      <% if current_user_admin? %>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle fa fa-user" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Users
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <%= link_to 'Users Index', users_path, class: 'dropdown-item' %>
+          <%= link_to 'New User', new_user_path, class: 'dropdown-item' %>
+        </div>
+        </li>
+      <% end %><!-- current_user_admin? -->
+
+
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle fa fa-cog" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <%= current_user.name %> <span class="caret"></span>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <%= link_to 'Your Profile', current_user, class: 'dropdown-item' %>
+        <%= link_to 'Account Settings', edit_user_path(current_user), class: 'dropdown-item' %>
+        <%= link_to 'Log Out', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+      </div>
+      </li>
+
+      <% else %>
+      <li class="nav-item">
+        <%= link_to 'Log In', new_session_path, class: 'nav-link' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "About", about_path, class: 'nav-link' %>
+      </li>
+      <% end %>
+
+
+    </ul>
+
+    <ul class="pull-right copyright">
+       <li>Copyright &copy; <%= Time.now.year %></li>
+    </ul> <!-- pull-right -->
+
+  </div>
+</nav>
