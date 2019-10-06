@@ -1,4 +1,4 @@
-class Reaction < ActiveRecord::Base
+class Reaction < ApplicationRecord
 
   before_validation :generate_slug
 
@@ -11,7 +11,7 @@ class Reaction < ActiveRecord::Base
 
   #scope :published, where(:publish_status => 'Published')
   scope :published, -> { where(:publish_status => 'Published').order("name") }
-    
+
   def generate_slug
     self.slug ||= name.parameterize if name
   end #generate_slug
@@ -19,5 +19,5 @@ class Reaction < ActiveRecord::Base
   def to_param
     slug
   end #to_param
-  
+
 end #Reaction

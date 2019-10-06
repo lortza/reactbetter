@@ -1,31 +1,23 @@
 class ReactionsController < ApplicationController
-  
+
   before_action :set_background_image
   before_action :require_signin
   before_action :set_reaction, only: [:show, :edit, :update, :destroy]
 
-  # GET /reactions
-  # GET /reactions.json
   def index
     @reactions = Reaction.all.order("name")
   end
 
-  # GET /reactions/1
-  # GET /reactions/1.json
   def show
   end
 
-  # GET /reactions/new
   def new
     @reaction = Reaction.new
   end
 
-  # GET /reactions/1/edit
   def edit
   end
 
-  # POST /reactions
-  # POST /reactions.json
   def create
     @reaction = Reaction.new(reaction_params)
 
@@ -40,8 +32,6 @@ class ReactionsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /reactions/1
-  # PATCH/PUT /reactions/1.json
   def update
     respond_to do |format|
       if @reaction.update(reaction_params)
@@ -54,8 +44,6 @@ class ReactionsController < ApplicationController
     end
   end
 
-  # DELETE /reactions/1
-  # DELETE /reactions/1.json
   def destroy
     @reaction.destroy
     respond_to do |format|
@@ -69,7 +57,7 @@ class ReactionsController < ApplicationController
     def set_background_image
       @background_image = "grass-1383426-1599x1066.jpg"
     end #set_background_image
-      
+
     def set_reaction
       #@reaction = Reaction.find(params[:id])
       @reaction = Reaction.find_by!(slug: params[:id])
@@ -78,5 +66,5 @@ class ReactionsController < ApplicationController
     def reaction_params
       params.require(:reaction).permit(:name, :explanation, :publish_status, :slug)
     end #reaction_params
-    
+
 end #ReactionsController
