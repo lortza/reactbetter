@@ -5,8 +5,8 @@ ReactBetter app displays a suggestion for a better emotional reaction with a ran
 
 See the live version of the app at http://reactbetter.herokuapp.com
 
-* Ruby version: 2.2.4
-* Rails version: 4.2.10
+* Ruby version: 2.5
+* Rails version: 5.2
 * Database: PSQL
 
 ### Features
