@@ -1,17 +1,17 @@
-branches:
-  only:
-    - 'master'
-    - 'test'
-
-language: ruby
-rvm:
-  - 2.5.3
-
-
-# uncomment this line if your project needs to run something other than `rake`:
-# script: bundle exec rspec spec
-
-script:
-  - bundle exec rake db:setup
-  # - bundle exec rake db:migrate
-  - bundle exec rake test
+# branches:
+#   only:
+#     - 'master'
+#     - 'test'
+#
+# language: ruby
+# rvm:
+#   - 2.5.3
+#
+#
+# # uncomment this line if your project needs to run something other than `rake`:
+# # script: bundle exec rspec spec
+#
+# script:
+#   - bundle exec rake db:setup
+#   # - bundle exec rake db:migrate
+#   - bundle exec rake test

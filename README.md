@@ -1,5 +1,5 @@
 ## README
-[![Build Status](https://travis-ci.org/lortza/reactbetter.svg?branch=master)](https://travis-ci.org/lortza/reactbetter)
+<!-- [![Build Status](https://travis-ci.org/lortza/reactbetter.svg?branch=master)](https://travis-ci.org/lortza/reactbetter) -->
 
 ReactBetter app displays a suggestion for a better emotional reaction with a randomly selected image in the background of that suggestion.
 
